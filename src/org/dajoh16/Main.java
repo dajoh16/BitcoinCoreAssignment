@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        BitcoinDaemon bitcoinDaemon = startBitcoinDaemon(true);
+        BitcoinDaemon bitcoinDaemon = startBitcoinDaemon(false);
         boolean cont = true;
         while(cont) {
            cont = programLoop();
@@ -50,17 +50,17 @@ public class Main {
     }
 
     private static void sendBitcoins(String addressToSendTo, String bitcoinAmount) {
-        Transaction transaction = new Transaction(addressToSendTo,bitcoinAmount, true);
+        Transaction transaction = new Transaction(addressToSendTo,bitcoinAmount, false);
         transaction.processTransaction();
     }
 
     private static void createAddress() {
-        Address address = new Address(true);
+        Address address = new Address(false);
         address.printNewAddress();
     }
 
     private static void getBalance() {
-        Balance balance = new Balance(true);
+        Balance balance = new Balance(false);
         balance.printBalance();
     }
 
