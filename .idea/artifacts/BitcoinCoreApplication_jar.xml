@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="BitcoinCoreApplication:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BitcoinCoreApplication_jar</output-path>
+    <root id="archive" name="BitcoinCoreApplication.jar">
+      <element id="module-output" name="BitcoinCoreApplication" />
+    </root>
+  </artifact>
+</component>
